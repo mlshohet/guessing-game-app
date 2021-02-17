@@ -6,7 +6,8 @@ import {
 	Button,
 	TouchableWithoutFeedback,
 	Keyboard,
-	Alert // calls a native API in mobile
+	Alert, // calls a native API in mobile
+	Dimensions
 } from 'react-native';
 
 import Card from '../components/Card';
@@ -119,11 +120,11 @@ const styles = StyleSheet.create({
 	title : {
 		fontSize: 20,
 		marginVertical: 10,
-		fontFamily: 'open-sans-bold'
 	},
 	inputContainer: {
-		width: 300,
-		maxWidth: '80%',
+		width: '80%',
+		maxWidth: '95%',
+		minWidth: 300,
 		alignItems: 'center',
 	},
 	buttonContainer: {
